@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<article>
+    <div id="form_div">
+        <form action="/Home/Index" method="post">
+            <table>       
+                <tr>
+                    <td><label for="passlength">Passwortlänge</label></td>
+                    <td><input id="passlength" type="number" required value="8" /></td>
+                </tr>
+                <tr>
+                    <td><label for="uppercase">Großbuchstaben</label></td>
+                    <td><input id="uppercase" type="number" required value="1" /></td>
+                </tr>
+                <tr>
+                    <td><label for="digit">Zahlen</label></td>
+                    <td><input id="digit" type="number" required value="1" /></td>
+                </tr>
+                <tr>
+                    <td><label for="specialcase">Sonderzeichen</label></td>
+                    <td><input id="specialcase" type="number" required value="1" /></td>
+                </tr>
+                <tr>
+                    <td id="buttoncell" colspan="2"><input id="btnGenerate" type="submit" /></td>
+                </tr> 
+            </table>
+        </form>
+    </div>
+</article>
